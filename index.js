@@ -1,12 +1,14 @@
 // require('dotenv').config({ path: '.env' });
 const express = require('express');
 const sql = require('mssql');
+const path = require('path');
 const app = express();
 
 // Make sure to use this middleware to parse the form data
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
 app.use(express.static(__dirname));
 

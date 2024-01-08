@@ -6,11 +6,13 @@ const app = express();
 // Make sure to use this middleware to parse the form data
 app.use(express.urlencoded({ extended: true }));
 
-// To load the static files in the Public folder
-app.use(express.static('Public'));
+// Serve static files from the public directory
+app.use(express.static('public'));
+app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'index.html');
+    console.log(__dirname);
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/submit-form', (req, res) => {

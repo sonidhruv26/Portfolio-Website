@@ -14,7 +14,7 @@ app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     console.log(__dirname);
-    res.redirect('/index.html');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/submit-form', (req, res) => {

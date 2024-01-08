@@ -14,8 +14,18 @@ This is the HTML source code for Dhruv Soni's Portfolio Resume. The website show
    cd Portfolio-Resume
    ```
 
-3. **Open `index.html` in a Browser:**
-   Open the `index.html` file in your preferred web browser to view Dhruv Soni's Portfolio Resume.
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the Server:**
+   ```bash
+   npm start
+   ```
+
+5. **Open the Website:**
+   Open your preferred web browser and visit `http://localhost:3000` to view Dhruv Soni's Portfolio Resume.
 
 ## View Live
 

@@ -8,13 +8,13 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'Public')));
+app.use(express.static('Public'));
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     console.log(__dirname);
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'Public', 'index.html'));
 });
 
 app.post('/submit-form', (req, res) => {

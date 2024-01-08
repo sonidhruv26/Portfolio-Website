@@ -29,7 +29,7 @@ This is the HTML source code for Dhruv Soni's Portfolio Resume. The website show
 
 ## View Live
 
-You can also view the live website at [Dhruv Soni - Portfolio Resume](https://sonidhruv26.github.io/Portfolio-Resume/).
+You can also view the live website at [Dhruv Soni - Portfolio Resume](http://dhruvsoni.tech/).
 
 ## Technologies Used
 

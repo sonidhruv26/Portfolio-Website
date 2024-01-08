@@ -12,7 +12,7 @@ app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
     console.log(__dirname);
-    res.sendFile('/index.html');
+    res.sendFile('index.html');
 });
 
 app.post('/submit-form', (req, res) => {
